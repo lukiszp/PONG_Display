@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title ""
 Date ""
 Rev ""
@@ -20,7 +20,7 @@ F0 "Moduł WiFi" 50
 F1 "esp.sch" 50
 $EndSheet
 $Sheet
-S 6200 4450 2900 1250
+S 5000 4450 2900 1250
 U 5E80B14C
 F0 "Power Supply" 50
 F1 "Power_supply.sch" 50
@@ -42,5 +42,11 @@ S 5000 1450 1800 1500
 U 5E80B18F
 F0 "MikrokontrolerAtmega" 50
 F1 "microcontroler.sch" 50
+$EndSheet
+$Sheet
+S 9200 4350 1150 1350
+U 5E80CCDD
+F0 "Interfejs złączy" 50
+F1 "IOinterface.sch" 50
 $EndSheet
 $EndSCHEMATC
