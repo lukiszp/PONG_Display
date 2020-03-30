@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 2 6
 Title ""
 Date ""
 Rev ""
@@ -27,16 +27,16 @@ F 3 "~" H 8850 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 8550 2800 0    50   Input ~ 0
-LED_DATA
+LED_DATA_ISO
 Wire Wire Line
 	8550 2800 8650 2800
 Text Notes 7750 7500 0    50   ~ 0
 Schemat wyświetlacza LED
 $Comp
-L power:+12V #PWR?
+L power:+12V #PWR0101
 U 1 1 5E85B748
 P 8500 2550
-F 0 "#PWR?" H 8500 2400 50  0001 C CNN
+F 0 "#PWR0101" H 8500 2400 50  0001 C CNN
 F 1 "+12V" H 8515 2723 50  0000 C CNN
 F 2 "" H 8500 2550 50  0001 C CNN
 F 3 "" H 8500 2550 50  0001 C CNN
@@ -44,10 +44,10 @@ F 3 "" H 8500 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0102
 U 1 1 5E85BD1D
 P 8500 3050
-F 0 "#PWR?" H 8500 2800 50  0001 C CNN
+F 0 "#PWR0102" H 8500 2800 50  0001 C CNN
 F 1 "GND" H 8505 2877 50  0000 C CNN
 F 2 "" H 8500 3050 50  0001 C CNN
 F 3 "" H 8500 3050 50  0001 C CNN
@@ -62,4 +62,107 @@ Wire Wire Line
 	8500 2900 8500 3050
 Wire Wire Line
 	8500 2900 8650 2900
+Text Notes 8250 2000 0    50   ~ 0
+Złącze wyjścia na wyświetlacz
+Text GLabel 1900 2550 0    50   Input ~ 0
+LED_DATA
+$Comp
+L Isolator:PC817 U?
+U 1 1 5E9027A7
+P 2950 2650
+F 0 "U?" H 2950 2975 50  0000 C CNN
+F 1 "PC817" H 2950 2884 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 2750 2450 50  0001 L CIN
+F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 2950 2650 50  0001 L CNN
+	1    2950 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E90451D
+P 2200 2550
+F 0 "R?" V 1993 2550 50  0000 C CNN
+F 1 "180R" V 2084 2550 50  0000 C CNN
+F 2 "" V 2130 2550 50  0001 C CNN
+F 3 "~" H 2200 2550 50  0001 C CNN
+	1    2200 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5E9048A0
+P 2450 3200
+F 0 "#PWR0103" H 2450 2950 50  0001 C CNN
+F 1 "GND" H 2455 3027 50  0000 C CNN
+F 2 "" H 2450 3200 50  0001 C CNN
+F 3 "" H 2450 3200 50  0001 C CNN
+	1    2450 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0104
+U 1 1 5E904C1B
+P 3500 2300
+F 0 "#PWR0104" H 3500 2150 50  0001 C CNN
+F 1 "+5V" H 3515 2473 50  0000 C CNN
+F 2 "" H 3500 2300 50  0001 C CNN
+F 3 "" H 3500 2300 50  0001 C CNN
+	1    3500 2300
+	1    0    0    -1  
+$EndComp
+Text GLabel 3600 2750 2    50   Output ~ 0
+LED_DATA_ISO
+Wire Wire Line
+	1900 2550 2050 2550
+Wire Wire Line
+	2350 2550 2650 2550
+Wire Wire Line
+	2450 3200 2450 2750
+Wire Wire Line
+	2450 2750 2650 2750
+Wire Wire Line
+	3250 2550 3500 2550
+Wire Wire Line
+	3500 2550 3500 2300
+Wire Wire Line
+	3250 2750 3400 2750
+Wire Notes Line
+	1150 1050 4800 1050
+Wire Notes Line
+	4800 1050 4800 3850
+Wire Notes Line
+	4800 3850 1150 3850
+Wire Notes Line
+	1150 3850 1150 1050
+Text Notes 1950 1350 0    50   ~ 0
+Układ izolatora 
+$Comp
+L Device:C C?
+U 1 1 5E90693A
+P 3400 2950
+F 0 "C?" H 3515 2996 50  0000 L CNN
+F 1 "100n" H 3515 2905 50  0000 L CNN
+F 2 "" H 3438 2800 50  0001 C CNN
+F 3 "~" H 3400 2950 50  0001 C CNN
+	1    3400 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5E906F7A
+P 3400 3200
+F 0 "#PWR0105" H 3400 2950 50  0001 C CNN
+F 1 "GND" H 3405 3027 50  0000 C CNN
+F 2 "" H 3400 3200 50  0001 C CNN
+F 3 "" H 3400 3200 50  0001 C CNN
+	1    3400 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 2750 3400 2800
+Connection ~ 3400 2750
+Wire Wire Line
+	3400 2750 3600 2750
+Wire Wire Line
+	3400 3100 3400 3200
 $EndSCHEMATC
