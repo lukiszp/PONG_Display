@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 6
+Sheet 6 6
 Title ""
 Date ""
 Rev ""
@@ -30,8 +30,8 @@ L Connector_Generic:Conn_02x04_Odd_Even J?
 U 1 1 5E838274
 P 4400 2150
 AR Path="/5E80CCDD/5E838274" Ref="J?"  Part="1" 
-AR Path="/5E80B1F8/5E838274" Ref="J?"  Part="1" 
-F 0 "J?" H 4450 2467 50  0000 C CNN
+AR Path="/5E80B1F8/5E838274" Ref="J7"  Part="1" 
+F 0 "J7" H 4450 2467 50  0000 C CNN
 F 1 "ESP_Conn" H 4450 2376 50  0000 C CNN
 F 2 "" H 4400 2150 50  0001 C CNN
 F 3 "~" H 4400 2150 50  0001 C CNN
@@ -55,8 +55,8 @@ L Connector_Generic:Conn_01x04 J?
 U 1 1 5E838282
 P 4700 3350
 AR Path="/5E80CCDD/5E838282" Ref="J?"  Part="1" 
-AR Path="/5E80B1F8/5E838282" Ref="J?"  Part="1" 
-F 0 "J?" H 4780 3342 50  0000 L CNN
+AR Path="/5E80B1F8/5E838282" Ref="J8"  Part="1" 
+F 0 "J8" H 4780 3342 50  0000 L CNN
 F 1 "ESP_Prog_Conn" H 4780 3251 50  0000 L CNN
 F 2 "" H 4700 3350 50  0001 C CNN
 F 3 "~" H 4700 3350 50  0001 C CNN

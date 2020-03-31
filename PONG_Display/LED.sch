@@ -18,8 +18,8 @@ L Connector_Generic:Conn_01x03 J?
 U 1 1 5E83917B
 P 8850 2800
 AR Path="/5E80CCDD/5E83917B" Ref="J?"  Part="1" 
-AR Path="/5E80C133/5E83917B" Ref="J?"  Part="1" 
-F 0 "J?" H 8930 2842 50  0000 L CNN
+AR Path="/5E80C133/5E83917B" Ref="J1"  Part="1" 
+F 0 "J1" H 8930 2842 50  0000 L CNN
 F 1 "LED_Display_Conn" H 8930 2751 50  0000 L CNN
 F 2 "" H 8850 2800 50  0001 C CNN
 F 3 "~" H 8850 2800 50  0001 C CNN
@@ -67,10 +67,10 @@ Złącze wyjścia na wyświetlacz
 Text GLabel 1900 2550 0    50   Input ~ 0
 LED_DATA
 $Comp
-L Isolator:PC817 U?
+L Isolator:PC817 U1
 U 1 1 5E9027A7
 P 2950 2650
-F 0 "U?" H 2950 2975 50  0000 C CNN
+F 0 "U1" H 2950 2975 50  0000 C CNN
 F 1 "PC817" H 2950 2884 50  0000 C CNN
 F 2 "Package_DIP:DIP-4_W7.62mm" H 2750 2450 50  0001 L CIN
 F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 2950 2650 50  0001 L CNN
@@ -78,12 +78,12 @@ F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 2950 2650 50  00
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R1
 U 1 1 5E90451D
 P 2200 2550
-F 0 "R?" V 1993 2550 50  0000 C CNN
+F 0 "R1" V 1993 2550 50  0000 C CNN
 F 1 "180R" V 2084 2550 50  0000 C CNN
-F 2 "" V 2130 2550 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 2130 2550 50  0001 C CNN
 F 3 "~" H 2200 2550 50  0001 C CNN
 	1    2200 2550
 	0    1    1    0   
@@ -137,12 +137,12 @@ Wire Notes Line
 Text Notes 1950 1350 0    50   ~ 0
 Układ izolatora 
 $Comp
-L Device:C C?
+L Device:C C1
 U 1 1 5E90693A
 P 3400 2950
-F 0 "C?" H 3515 2996 50  0000 L CNN
+F 0 "C1" H 3515 2996 50  0000 L CNN
 F 1 "100n" H 3515 2905 50  0000 L CNN
-F 2 "" H 3438 2800 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3438 2800 50  0001 C CNN
 F 3 "~" H 3400 2950 50  0001 C CNN
 	1    3400 2950
 	1    0    0    -1  
