@@ -33,7 +33,7 @@ AR Path="/5E80CCDD/5E838274" Ref="J?"  Part="1"
 AR Path="/5E80B1F8/5E838274" Ref="J7"  Part="1" 
 F 0 "J7" H 4450 2467 50  0000 C CNN
 F 1 "ESP_Conn" H 4450 2376 50  0000 C CNN
-F 2 "" H 4400 2150 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 4400 2150 50  0001 C CNN
 F 3 "~" H 4400 2150 50  0001 C CNN
 	1    4400 2150
 	-1   0    0    -1  
@@ -58,7 +58,7 @@ AR Path="/5E80CCDD/5E838282" Ref="J?"  Part="1"
 AR Path="/5E80B1F8/5E838282" Ref="J8"  Part="1" 
 F 0 "J8" H 4780 3342 50  0000 L CNN
 F 1 "ESP_Prog_Conn" H 4780 3251 50  0000 L CNN
-F 2 "" H 4700 3350 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4700 3350 50  0001 C CNN
 F 3 "~" H 4700 3350 50  0001 C CNN
 	1    4700 3350
 	1    0    0    -1  

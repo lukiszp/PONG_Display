@@ -34,7 +34,7 @@ AR Path="/5E80CCDD/5E82C0E3" Ref="J?"  Part="1"
 AR Path="/5E80B6DE/5E82C0E3" Ref="J4"  Part="1" 
 F 0 "J4" H 6330 3592 50  0000 L CNN
 F 1 "LightSensor_Conn" H 6330 3501 50  0000 L CNN
-F 2 "" H 6250 3600 50  0001 C CNN
+F 2 "Connector_Molex:Molex_CLIK-Mate_502382-0270_1x02-1MP_P1.25mm_Vertical" H 6250 3600 50  0001 C CNN
 F 3 "~" H 6250 3600 50  0001 C CNN
 	1    6250 3600
 	1    0    0    -1  
@@ -155,7 +155,7 @@ U 1 1 5E9C873A
 P 5450 3700
 F 0 "RV2" H 5380 3654 50  0000 R CNN
 F 1 "R_POT" H 5380 3745 50  0000 R CNN
-F 2 "" H 5450 3700 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Piher_PT-6-V_Vertical" H 5450 3700 50  0001 C CNN
 F 3 "~" H 5450 3700 50  0001 C CNN
 	1    5450 3700
 	0    1    1    0   
