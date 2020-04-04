@@ -43,7 +43,7 @@ Text GLabel 4850 2650 0    50   Input ~ 0
 DHT22_DATA
 Wire Wire Line
 	4850 2650 6050 2650
-Text GLabel 5050 4150 0    50   Output ~ 0
+Text GLabel 5650 3700 0    50   Output ~ 0
 LIGHT_SENSOR_OUT
 $Comp
 L Connector_Generic:Conn_01x03 J?
@@ -149,36 +149,6 @@ Wire Wire Line
 	5800 3600 6050 3600
 Wire Wire Line
 	4750 4700 6050 4700
-$Comp
-L Device:R_POT RV2
-U 1 1 5E9C873A
-P 5450 3700
-F 0 "RV2" H 5380 3654 50  0000 R CNN
-F 1 "R_POT" H 5380 3745 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Piher_PT-6-V_Vertical" H 5450 3700 50  0001 C CNN
-F 3 "~" H 5450 3700 50  0001 C CNN
-	1    5450 3700
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR0136
-U 1 1 5E9CD10E
-P 5100 3750
-F 0 "#PWR0136" H 5100 3500 50  0001 C CNN
-F 1 "GND" H 5105 3577 50  0000 C CNN
-F 2 "" H 5100 3750 50  0001 C CNN
-F 3 "" H 5100 3750 50  0001 C CNN
-	1    5100 3750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	5450 3850 5450 4150
-Wire Wire Line
-	5450 4150 5050 4150
-Wire Wire Line
-	5100 3750 5100 3700
-Wire Wire Line
-	5100 3700 5300 3700
-Wire Wire Line
-	5600 3700 6050 3700
+	6050 3700 5650 3700
 $EndSCHEMATC

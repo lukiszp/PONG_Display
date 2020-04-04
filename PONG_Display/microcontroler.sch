@@ -171,10 +171,8 @@ Wire Wire Line
 	5200 2800 5350 2800
 Wire Wire Line
 	5200 3100 5350 3100
-Text GLabel 1550 2500 0    50   Input ~ 0
+Text GLabel 1100 1900 1    50   Input ~ 0
 LIGHT_SENSOR_OUT
-Wire Wire Line
-	1550 2500 2200 2500
 $Comp
 L power:+5V #PWR0142
 U 1 1 5E870E21
@@ -979,4 +977,34 @@ F 3 "" H 5300 6700 50  0001 C CNN
 	1    5300 6700
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R_POT RV?
+U 1 1 5E88F324
+P 1100 2500
+F 0 "RV?" H 1030 2454 50  0000 R CNN
+F 1 "R_POT" H 1030 2545 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Piher_PT-6-V_Vertical" H 1100 2500 50  0001 C CNN
+F 3 "~" H 1100 2500 50  0001 C CNN
+	1    1100 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E88F32A
+P 1150 2850
+F 0 "#PWR?" H 1150 2600 50  0001 C CNN
+F 1 "GND" H 1155 2677 50  0000 C CNN
+F 2 "" H 1150 2850 50  0001 C CNN
+F 3 "" H 1150 2850 50  0001 C CNN
+	1    1150 2850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1150 2850 1100 2850
+Wire Wire Line
+	1100 2850 1100 2650
+Wire Wire Line
+	1100 2350 1100 1900
+Wire Wire Line
+	1250 2500 2200 2500
 $EndSCHEMATC
