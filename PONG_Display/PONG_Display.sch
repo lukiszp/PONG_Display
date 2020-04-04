@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:PONG_Display-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -263,4 +264,6 @@ F9 "ESP_CH_PD" I L 8400 3100 50
 $EndSheet
 Text Notes 7600 7500 0    50   ~ 0
 Wyświetlacz ping-pong - schemat główny
+Text Notes 6150 1500 2    50   ~ 0
+miałem tu coś napsiać\n
 $EndSCHEMATC
