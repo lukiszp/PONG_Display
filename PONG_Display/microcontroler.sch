@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:PONG_Display-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -14,11 +15,12 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:AVR-ISP-10 J?
+L PONG_Display-rescue:AVR-ISP-10-Connector J?
 U 1 1 5E830B15
 P 1650 6750
 AR Path="/5E80CCDD/5E830B15" Ref="J?"  Part="1" 
 AR Path="/5E80B18F/5E830B15" Ref="J6"  Part="1" 
+AR Path="/5E830B15" Ref="J6"  Part="1" 
 F 0 "J6" H 1320 6846 50  0000 R CNN
 F 1 "AVR-ISP-10" H 1320 6755 50  0000 R CNN
 F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical" V 1400 6800 50  0001 C CNN
@@ -49,7 +51,7 @@ Wire Wire Line
 Text Notes 7750 7500 0    50   ~ 0
 Schemat mikrokontrolera
 $Comp
-L MCU_Microchip_ATmega:ATmega328P-AU U4
+L PONG_Display-rescue:ATmega328P-AU-MCU_Microchip_ATmega U4
 U 1 1 5E85008B
 P 2800 3500
 F 0 "U4" H 2400 5000 50  0000 C CNN
