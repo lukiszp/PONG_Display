@@ -143,4 +143,6 @@ Wire Notes Line
 	2900 1300 2900 3900
 Text Notes 3400 1500 0    50   ~ 0
 Złącze do modułu WiFi oraz programatora RS232
+Text Label 3000 1050 0    50   ~ 0
+Do_sprawdzenia_przed_rysowaniem_pcb_czy_na_pewno_piny_dobrze_przypisane
 $EndSCHEMATC
