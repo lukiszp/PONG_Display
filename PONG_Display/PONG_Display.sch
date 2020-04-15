@@ -114,58 +114,6 @@ Wire Wire Line
 Wire Wire Line
 	8000 4900 8800 4900
 $Comp
-L Mechanical:Fiducial FID?
-U 1 1 5E8DB9CF
-P 1350 6100
-AR Path="/5E80B18F/5E8DB9CF" Ref="FID?"  Part="1" 
-AR Path="/5E8DB9CF" Ref="FID1"  Part="1" 
-F 0 "FID1" H 1435 6146 50  0000 L CNN
-F 1 "Fiducial" H 1435 6055 50  0000 L CNN
-F 2 "Fiducial:Fiducial_0.5mm_Mask1.5mm" H 1350 6100 50  0001 C CNN
-F 3 "~" H 1350 6100 50  0001 C CNN
-	1    1350 6100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:Fiducial FID?
-U 1 1 5E8DB9D5
-P 1350 6500
-AR Path="/5E80B18F/5E8DB9D5" Ref="FID?"  Part="1" 
-AR Path="/5E8DB9D5" Ref="FID2"  Part="1" 
-F 0 "FID2" H 1435 6546 50  0000 L CNN
-F 1 "Fiducial" H 1435 6455 50  0000 L CNN
-F 2 "Fiducial:Fiducial_0.5mm_Mask1.5mm" H 1350 6500 50  0001 C CNN
-F 3 "~" H 1350 6500 50  0001 C CNN
-	1    1350 6500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:Fiducial FID?
-U 1 1 5E8DB9DB
-P 1350 6900
-AR Path="/5E80B18F/5E8DB9DB" Ref="FID?"  Part="1" 
-AR Path="/5E8DB9DB" Ref="FID3"  Part="1" 
-F 0 "FID3" H 1435 6946 50  0000 L CNN
-F 1 "Fiducial" H 1435 6855 50  0000 L CNN
-F 2 "Fiducial:Fiducial_0.5mm_Mask1.5mm" H 1350 6900 50  0001 C CNN
-F 3 "~" H 1350 6900 50  0001 C CNN
-	1    1350 6900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:Fiducial FID?
-U 1 1 5E8DB9E1
-P 1350 7250
-AR Path="/5E80B18F/5E8DB9E1" Ref="FID?"  Part="1" 
-AR Path="/5E8DB9E1" Ref="FID4"  Part="1" 
-F 0 "FID4" H 1435 7296 50  0000 L CNN
-F 1 "Fiducial" H 1435 7205 50  0000 L CNN
-F 2 "Fiducial:Fiducial_0.5mm_Mask1.5mm" H 1350 7250 50  0001 C CNN
-F 3 "~" H 1350 7250 50  0001 C CNN
-	1    1350 7250
-	1    0    0    -1  
-$EndComp
-$Comp
 L Mechanical:MountingHole H?
 U 1 1 5E8DB9E7
 P 2250 6100
