@@ -217,4 +217,128 @@ Text HLabel 8300 2700 0    50   Input ~ 0
 ESP_GPIO0
 NoConn ~ 9050 2350
 NoConn ~ 9050 2800
+$Comp
+L power:+5V #PWR?
+U 1 1 5E9DFF82
+P 4700 5250
+F 0 "#PWR?" H 4700 5100 50  0001 C CNN
+F 1 "+5V" H 4715 5423 50  0000 C CNN
+F 2 "" H 4700 5250 50  0001 C CNN
+F 3 "" H 4700 5250 50  0001 C CNN
+	1    4700 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E9DFF88
+P 4700 6250
+F 0 "#PWR?" H 4700 6000 50  0001 C CNN
+F 1 "GND" H 4705 6077 50  0000 C CNN
+F 2 "" H 4700 6250 50  0001 C CNN
+F 3 "" H 4700 6250 50  0001 C CNN
+	1    4700 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E9DFF8E
+P 4700 6000
+F 0 "C?" H 4815 6046 50  0000 L CNN
+F 1 "100n" H 4815 5955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4738 5850 50  0001 C CNN
+F 3 "~" H 4700 6000 50  0001 C CNN
+	1    4700 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E9DFF94
+P 4550 5500
+F 0 "R?" H 4620 5546 50  0000 L CNN
+F 1 "10k" H 4620 5455 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4480 5500 50  0001 C CNN
+F 3 "~" H 4550 5500 50  0001 C CNN
+	1    4550 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Zener D?
+U 1 1 5E9DFF9A
+P 4800 5500
+F 0 "D?" V 4754 5579 50  0000 L CNN
+F 1 "D_Zener" V 4845 5579 50  0000 L CNN
+F 2 "Diode_THT:D_DO-34_SOD68_P7.62mm_Horizontal" H 4800 5500 50  0001 C CNN
+F 3 "~" H 4800 5500 50  0001 C CNN
+	1    4800 5500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4700 5250 4800 5250
+Wire Wire Line
+	4800 5250 4800 5350
+Wire Wire Line
+	4700 5250 4550 5250
+Wire Wire Line
+	4550 5250 4550 5350
+Connection ~ 4700 5250
+Wire Wire Line
+	4550 5650 4550 5750
+Wire Wire Line
+	4800 5750 4800 5650
+Wire Wire Line
+	4700 6250 4700 6150
+Wire Wire Line
+	4550 5750 4050 5750
+Connection ~ 4550 5750
+$Comp
+L Device:R R?
+U 1 1 5E9DFFAA
+P 5850 6100
+F 0 "R?" H 5920 6146 50  0000 L CNN
+F 1 "330R" H 5920 6055 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5780 6100 50  0001 C CNN
+F 3 "~" H 5850 6100 50  0001 C CNN
+	1    5850 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E9DFFB0
+P 5850 6500
+F 0 "#PWR?" H 5850 6250 50  0001 C CNN
+F 1 "GND" H 5855 6327 50  0000 C CNN
+F 2 "" H 5850 6500 50  0001 C CNN
+F 3 "" H 5850 6500 50  0001 C CNN
+	1    5850 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 6250 5850 6500
+Wire Wire Line
+	4550 5750 4700 5750
+Wire Wire Line
+	4700 5750 4700 5850
+Connection ~ 4700 5750
+Wire Wire Line
+	4700 5750 4800 5750
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5E9DFFBB
+P 5400 5750
+F 0 "SW?" H 5400 6035 50  0000 C CNN
+F 1 "SW_Push" H 5400 5944 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 5400 5950 50  0001 C CNN
+F 3 "~" H 5400 5950 50  0001 C CNN
+	1    5400 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 5750 5200 5750
+Connection ~ 4800 5750
+Wire Wire Line
+	5850 5750 5850 5950
+Wire Wire Line
+	5600 5750 5850 5750
+Text HLabel 4050 5750 0    50   Input ~ 0
+ESP_RST
 $EndSCHEMATC

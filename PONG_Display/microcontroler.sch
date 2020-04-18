@@ -439,8 +439,6 @@ Wire Wire Line
 	6400 3800 6400 3700
 Wire Wire Line
 	6300 4300 6300 4200
-Wire Wire Line
-	6150 3800 5650 3800
 Connection ~ 6150 3800
 $Comp
 L Device:R R6
@@ -977,9 +975,6 @@ Wire Wire Line
 	3400 3600 3550 3600
 Wire Wire Line
 	3400 3700 3550 3700
-Wire Wire Line
-	5650 3650 5650 3800
-Connection ~ 5650 3800
 Text HLabel 1100 1900 1    50   Input ~ 0
 LIGHT_SENSOR_OUT
 Text HLabel 4000 4200 2    50   Input ~ 0
@@ -1010,10 +1005,6 @@ Text Label 2300 6850 0    50   ~ 0
 uC_RST
 Text Label 5150 3800 0    50   ~ 0
 uC_RST
-Wire Wire Line
-	3400 3800 5650 3800
-Text HLabel 5650 3650 1    50   Input ~ 0
-ESP_RST
 NoConn ~ 2200 2600
 NoConn ~ 3400 2500
 NoConn ~ 3400 3200
@@ -1032,4 +1023,6 @@ Text Label 8250 1800 0    50   ~ 0
 RTC_SDA
 Text HLabel 3550 2400 2    50   Input ~ 0
 LED_DATA
+Wire Wire Line
+	3400 3800 6150 3800
 $EndSCHEMATC
