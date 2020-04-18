@@ -454,7 +454,7 @@ Wire Wire Line
 Wire Wire Line
 	6300 4300 6300 4200
 Wire Wire Line
-	6150 3800 5500 3800
+	6150 3800 5650 3800
 Connection ~ 6150 3800
 $Comp
 L Device:R R6
@@ -1016,4 +1016,11 @@ Wire Wire Line
 	3400 3600 3550 3600
 Wire Wire Line
 	3400 3700 3550 3700
+Text GLabel 5650 3650 1    50   Input ~ 0
+ESP_RST
+Wire Wire Line
+	5650 3650 5650 3800
+Connection ~ 5650 3800
+Wire Wire Line
+	5650 3800 5500 3800
 $EndSCHEMATC

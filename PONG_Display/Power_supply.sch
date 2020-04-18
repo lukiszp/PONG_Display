@@ -621,7 +621,7 @@ U 1 1 5E9F22F8
 P 4600 5700
 F 0 "RV1" H 4530 5654 50  0000 R CNN
 F 1 "100k" H 4530 5745 50  0000 R CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4600 5700 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Piher_PT-6-V_Vertical" H 4600 5700 50  0001 C CNN
 F 3 "~" H 4600 5700 50  0001 C CNN
 	1    4600 5700
 	-1   0    0    1   
@@ -685,12 +685,12 @@ Wire Wire Line
 	4100 5500 4200 5500
 Connection ~ 4100 5500
 $Comp
-L Device:Fuse F?
+L Device:Fuse F1
 U 1 1 5EA039B3
 P 2400 1750
-F 0 "F?" V 2203 1750 50  0000 C CNN
+F 0 "F1" V 2203 1750 50  0000 C CNN
 F 1 "Fuse" V 2294 1750 50  0000 C CNN
-F 2 "" V 2330 1750 50  0001 C CNN
+F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_FAB_0031-355x_Horizontal_Closed" V 2330 1750 50  0001 C CNN
 F 3 "~" H 2400 1750 50  0001 C CNN
 	1    2400 1750
 	0    1    1    0   
