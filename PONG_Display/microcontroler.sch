@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:PONG_Display-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -27,14 +28,6 @@ F 3 " ~" H 375 6200 50  0001 C CNN
 	1    1650 6750
 	1    0    0    -1  
 $EndComp
-Text GLabel 2300 6550 2    50   BiDi ~ 0
-uC_MISO
-Text GLabel 2300 6650 2    50   BiDi ~ 0
-uC_MOSI
-Text GLabel 2300 6750 2    50   BiDi ~ 0
-uC_SCK
-Text GLabel 2300 6850 2    50   BiDi ~ 0
-uC_RST
 Wire Wire Line
 	1550 6050 1550 6250
 Wire Wire Line
@@ -172,8 +165,6 @@ Wire Wire Line
 	5200 2800 5350 2800
 Wire Wire Line
 	5200 3100 5350 3100
-Text GLabel 1100 1900 1    50   Input ~ 0
-LIGHT_SENSOR_OUT
 $Comp
 L power:+5V #PWR0142
 U 1 1 5E870E21
@@ -248,10 +239,6 @@ Wire Wire Line
 	4300 5450 4300 5600
 Wire Wire Line
 	4300 5900 4300 6100
-Text GLabel 3550 2300 2    50   Output ~ 0
-DHT22_DATA
-Text GLabel 4000 4200 2    50   Input ~ 0
-PIR_SENSOR_OUT
 Wire Wire Line
 	3400 2300 3550 2300
 Wire Wire Line
@@ -505,19 +492,6 @@ Wire Wire Line
 	7450 3800 7450 4000
 Wire Wire Line
 	7200 3800 7450 3800
-Text GLabel 5500 3650 1    50   BiDi ~ 0
-uC_RST
-Wire Wire Line
-	5500 3650 5500 3800
-Connection ~ 5500 3800
-Wire Wire Line
-	5500 3800 3400 3800
-Text GLabel 3550 2700 2    50   BiDi ~ 0
-uC_MISO
-Text GLabel 3550 2600 2    50   BiDi ~ 0
-uC_MOSI
-Text GLabel 3550 2800 2    50   BiDi ~ 0
-uC_SCK
 Wire Wire Line
 	3400 2700 3550 2700
 Wire Wire Line
@@ -534,10 +508,6 @@ Wire Notes Line
 	600  7700 600  5500
 Text Notes 800  5650 0    50   ~ 0
 Złącze programowania mikrokontrolera
-Text GLabel 3550 4100 2    50   BiDi ~ 0
-ESP_RX
-Text GLabel 3550 4000 2    50   BiDi ~ 0
-ESP_TX
 Wire Wire Line
 	3400 4000 3550 4000
 Wire Wire Line
@@ -575,10 +545,6 @@ F 3 "" H 9550 2650 50  0001 C CNN
 	1    9550 2650
 	1    0    0    -1  
 $EndComp
-Text GLabel 8250 1700 0    50   BiDi ~ 0
-RTC_SCL
-Text GLabel 8250 1800 0    50   BiDi ~ 0
-RTC_SDA
 Wire Wire Line
 	8250 1700 8650 1700
 Wire Wire Line
@@ -715,7 +681,7 @@ L Device:R R7
 U 1 1 5E95C45E
 P 8650 1150
 F 0 "R7" H 8720 1196 50  0000 L CNN
-F 1 "10k" H 8720 1105 50  0000 L CNN
+F 1 "2k2" H 8720 1105 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 8580 1150 50  0001 C CNN
 F 3 "~" H 8650 1150 50  0001 C CNN
 	1    8650 1150
@@ -726,7 +692,7 @@ L Device:R R8
 U 1 1 5E95CAEC
 P 8900 1450
 F 0 "R8" H 8970 1496 50  0000 L CNN
-F 1 "10k" H 8970 1405 50  0000 L CNN
+F 1 "2k2" H 8970 1405 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 8830 1450 50  0001 C CNN
 F 3 "~" H 8900 1450 50  0001 C CNN
 	1    8900 1450
@@ -1008,19 +974,62 @@ Wire Wire Line
 	1100 2350 1100 1900
 Wire Wire Line
 	1250 2500 2200 2500
-Text GLabel 3550 3700 2    50   BiDi ~ 0
-RTC_SCL
-Text GLabel 3550 3600 2    50   BiDi ~ 0
-RTC_SDA
 Wire Wire Line
 	3400 3600 3550 3600
 Wire Wire Line
 	3400 3700 3550 3700
-Text GLabel 5650 3650 1    50   Input ~ 0
-ESP_RST
 Wire Wire Line
 	5650 3650 5650 3800
 Connection ~ 5650 3800
+Text HLabel 1100 1900 1    50   Input ~ 0
+LIGHT_SENSOR_OUT
+Text HLabel 4000 4200 2    50   Input ~ 0
+PIR_SENSOR_OUT
+Text HLabel 3550 2300 2    50   Input ~ 0
+DHT22_DATA
+Text HLabel 3550 4000 2    50   Input ~ 0
+ESP_TX
+Text HLabel 3550 4100 2    50   Input ~ 0
+ESP_RX
+Text Label 3550 3600 0    50   ~ 0
+RTC_SDA
+Text Label 3550 3700 0    50   ~ 0
+RTC_SCL
+Text Label 3550 2800 0    50   ~ 0
+uC_SCK
+Text Label 3550 2700 0    50   ~ 0
+uC_MISO
+Text Label 3550 2600 0    50   ~ 0
+uC_MOSI
+Text Label 2300 6550 0    50   ~ 0
+uC_MISO
+Text Label 2300 6650 0    50   ~ 0
+uC_MOSI
+Text Label 2300 6750 0    50   ~ 0
+uC_SCK
+Text Label 2300 6850 0    50   ~ 0
+uC_RST
+Text Label 5150 3800 0    50   ~ 0
+uC_RST
 Wire Wire Line
-	5650 3800 5500 3800
+	3400 3800 5650 3800
+Text HLabel 5650 3650 1    50   Input ~ 0
+ESP_RST
+NoConn ~ 2200 2600
+NoConn ~ 3400 2400
+NoConn ~ 3400 2500
+NoConn ~ 3400 3200
+NoConn ~ 3400 3300
+NoConn ~ 3400 3400
+NoConn ~ 3400 3500
+NoConn ~ 3400 4300
+NoConn ~ 3400 4400
+NoConn ~ 3400 4500
+NoConn ~ 3400 4600
+NoConn ~ 3400 4700
+NoConn ~ 9150 2000
+Text Label 8250 1700 0    50   ~ 0
+RTC_SCL
+Text Label 8250 1800 0    50   ~ 0
+RTC_SDA
 $EndSCHEMATC

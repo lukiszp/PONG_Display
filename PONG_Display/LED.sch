@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:PONG_Display-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -26,10 +27,6 @@ F 3 "~" H 8850 2800 50  0001 C CNN
 	1    8850 2800
 	1    0    0    -1  
 $EndComp
-Text GLabel 8550 2800 0    50   Input ~ 0
-LED_DATA_ISO
-Wire Wire Line
-	8550 2800 8650 2800
 Text Notes 7750 7500 0    50   ~ 0
 Schemat wyświetlacza LED
 $Comp
@@ -64,8 +61,6 @@ Wire Wire Line
 	8500 2900 8650 2900
 Text Notes 8250 2000 0    50   ~ 0
 Złącze wyjścia na wyświetlacz
-Text GLabel 1900 2550 0    50   Input ~ 0
-LED_DATA
 $Comp
 L Isolator:PC817 U1
 U 1 1 5E9027A7
@@ -110,10 +105,6 @@ F 3 "" H 3500 2300 50  0001 C CNN
 	1    3500 2300
 	1    0    0    -1  
 $EndComp
-Text GLabel 3600 2750 2    50   Output ~ 0
-LED_DATA_ISO
-Wire Wire Line
-	1900 2550 2050 2550
 Wire Wire Line
 	2350 2550 2650 2550
 Wire Wire Line
@@ -165,4 +156,14 @@ Wire Wire Line
 	3400 2750 3600 2750
 Wire Wire Line
 	3400 3100 3400 3200
+Text HLabel 1900 2550 0    50   Input ~ 0
+LED_DATA
+Text Label 3600 2750 0    50   ~ 0
+LED_DATA_ISO
+Text Label 7950 2800 0    50   ~ 0
+LED_DATA_ISO
+Wire Wire Line
+	7950 2800 8650 2800
+Wire Wire Line
+	1900 2550 2050 2550
 $EndSCHEMATC

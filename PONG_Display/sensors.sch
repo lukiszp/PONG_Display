@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:PONG_Display-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -39,12 +40,8 @@ F 3 "~" H 6250 3600 50  0001 C CNN
 	1    6250 3600
 	1    0    0    -1  
 $EndComp
-Text GLabel 4850 2650 0    50   Input ~ 0
-DHT22_DATA
 Wire Wire Line
 	4850 2650 6050 2650
-Text GLabel 5650 3700 0    50   Output ~ 0
-LIGHT_SENSOR_OUT
 $Comp
 L Connector_Generic:Conn_01x03 J?
 U 1 1 5E82C0F3
@@ -56,10 +53,8 @@ F 1 "PIR_Sensor_Conn" H 6330 4651 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-3-3.5-H_1x03_P3.50mm_Horizontal" H 6250 4700 50  0001 C CNN
 F 3 "~" H 6250 4700 50  0001 C CNN
 	1    6250 4700
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
-Text GLabel 4750 4700 0    50   Output ~ 0
-PIR_OUT
 Text Notes 7750 7500 0    50   ~ 0
 Schemat układu czujników
 $Comp
@@ -151,4 +146,10 @@ Wire Wire Line
 	4750 4700 6050 4700
 Wire Wire Line
 	6050 3700 5650 3700
+Text HLabel 4850 2650 0    50   Input ~ 0
+DHT22_DATA
+Text HLabel 5650 3700 0    50   Input ~ 0
+LIGHT_SENSOR_OUT
+Text HLabel 4750 4700 0    50   Input ~ 0
+PIR_OUT
 $EndSCHEMATC

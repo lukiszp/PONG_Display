@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:PONG_Display-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -13,18 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 4700 2150 2    50   Input ~ 0
-ESP_RST
-Text GLabel 4700 2250 2    50   Input ~ 0
-ESP_CH_PD
-Text GLabel 4700 2350 2    50   BiDi ~ 0
-ESP_TX
-Text GLabel 3950 2050 0    50   BiDi ~ 0
-ESP_RX
-Text GLabel 3950 2150 0    50   BiDi ~ 0
-ESP_GPIO0
-Text GLabel 3950 2250 0    50   BiDi ~ 0
-ESP_GPIO2
 $Comp
 L Connector_Generic:Conn_02x04_Odd_Even J?
 U 1 1 5E838274
@@ -69,10 +58,6 @@ Wire Wire Line
 	4350 3150 4500 3150
 Wire Wire Line
 	4350 3250 4500 3250
-Text GLabel 4350 3250 0    50   BiDi ~ 0
-ESP_TX
-Text GLabel 4350 3150 0    50   BiDi ~ 0
-ESP_RX
 Text Notes 7800 7500 0    50   ~ 0
 Schemat modułu WiFi
 $Comp
@@ -155,10 +140,6 @@ Wire Notes Line
 	7000 1300 10700 1300
 Text Notes 8100 1500 0    50   ~ 0
 Przełączniki programowania ESP przez RS232
-Text GLabel 8300 2250 0    50   Input ~ 0
-ESP_CH_PD
-Text GLabel 8300 2700 0    50   BiDi ~ 0
-ESP_GPIO0
 $Comp
 L power:+3.3V #PWR01
 U 1 1 5E9D6E89
@@ -215,4 +196,26 @@ F 3 "~" H 8850 2700 50  0001 C CNN
 	1    8850 2700
 	1    0    0    -1  
 $EndComp
+Text HLabel 3950 2050 0    50   Input ~ 0
+ESP_RX
+Text HLabel 4700 2350 2    50   Input ~ 0
+ESP_TX
+Text HLabel 4700 2150 2    50   Input ~ 0
+ESP_RST
+Text HLabel 4700 2250 2    50   Input ~ 0
+ESP_CH_PD
+Text HLabel 3950 2150 0    50   Input ~ 0
+ESP_GPIO0
+Text HLabel 3950 2250 0    50   Input ~ 0
+ESP_GPIO2
+Text HLabel 4350 3150 0    50   Input ~ 0
+ESP_RX
+Text HLabel 4350 3250 0    50   Input ~ 0
+ESP_TX
+Text HLabel 8300 2250 0    50   Input ~ 0
+ESP_CH_PD
+Text HLabel 8300 2700 0    50   Input ~ 0
+ESP_GPIO0
+NoConn ~ 9050 2350
+NoConn ~ 9050 2800
 $EndSCHEMATC
