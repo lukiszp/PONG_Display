@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:PONG_Display-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -31,10 +30,6 @@ Wire Wire Line
 	7200 2350 8400 2350
 Wire Wire Line
 	7200 2500 8400 2500
-Wire Wire Line
-	7200 2650 8400 2650
-Wire Wire Line
-	7200 2800 8400 2800
 Wire Wire Line
 	3850 2650 5400 2650
 Wire Wire Line
@@ -121,6 +116,7 @@ F4 "DHT22_DATA" I L 5400 2650 50
 F5 "ESP_TX" I R 7200 2500 50 
 F6 "ESP_RX" I R 7200 2350 50 
 F7 "ESP_RST" I R 7200 2950 50 
+F8 "LED_DATA" I R 7200 3300 50 
 $EndSheet
 Wire Wire Line
 	7200 2950 8400 2950

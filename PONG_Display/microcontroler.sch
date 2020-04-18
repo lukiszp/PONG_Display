@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:PONG_Display-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -581,7 +580,7 @@ U 1 1 5E9462B0
 P 10150 1900
 F 0 "Y2" V 10104 2031 50  0000 L CNN
 F 1 "32,768kHz" V 10195 2031 50  0000 L CNN
-F 2 "Crystal:Crystal_C38-LF_D3.0mm_L8.0mm_Horizontal" H 10150 1900 50  0001 C CNN
+F 2 "Crystal:Crystal_C26-LF_D2.1mm_L6.5mm_Horizontal" H 10150 1900 50  0001 C CNN
 F 3 "~" H 10150 1900 50  0001 C CNN
 	1    10150 1900
 	0    1    1    0   
@@ -1016,7 +1015,6 @@ Wire Wire Line
 Text HLabel 5650 3650 1    50   Input ~ 0
 ESP_RST
 NoConn ~ 2200 2600
-NoConn ~ 3400 2400
 NoConn ~ 3400 2500
 NoConn ~ 3400 3200
 NoConn ~ 3400 3300
@@ -1032,4 +1030,8 @@ Text Label 8250 1700 0    50   ~ 0
 RTC_SCL
 Text Label 8250 1800 0    50   ~ 0
 RTC_SDA
+Text HLabel 3550 2400 2    50   Input ~ 0
+LED_DATA
+Wire Wire Line
+	3550 2400 3400 2400
 $EndSCHEMATC

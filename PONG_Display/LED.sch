@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:PONG_Display-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -94,17 +93,6 @@ F 3 "" H 2450 3200 50  0001 C CNN
 	1    2450 3200
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+5V #PWR0104
-U 1 1 5E904C1B
-P 3500 2300
-F 0 "#PWR0104" H 3500 2150 50  0001 C CNN
-F 1 "+5V" H 3515 2473 50  0000 C CNN
-F 2 "" H 3500 2300 50  0001 C CNN
-F 3 "" H 3500 2300 50  0001 C CNN
-	1    3500 2300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2350 2550 2650 2550
 Wire Wire Line
@@ -166,4 +154,15 @@ Wire Wire Line
 	7950 2800 8650 2800
 Wire Wire Line
 	1900 2550 2050 2550
+$Comp
+L power:+12V #PWR0104
+U 1 1 5E9C9DE1
+P 3500 2300
+F 0 "#PWR0104" H 3500 2150 50  0001 C CNN
+F 1 "+12V" H 3515 2473 50  0000 C CNN
+F 2 "" H 3500 2300 50  0001 C CNN
+F 3 "" H 3500 2300 50  0001 C CNN
+	1    3500 2300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
