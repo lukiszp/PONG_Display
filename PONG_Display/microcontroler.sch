@@ -517,7 +517,7 @@ U 1 1 5E92B5C5
 P 9550 1900
 F 0 "U5" H 9850 1400 50  0000 C CNN
 F 1 "MCP7940N-xST" H 9900 1300 50  0000 C CNN
-F 2 "Package_SO:TSSOP-8_4.4x3mm_P0.65mm" H 9550 1900 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9550 1900 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20005010F.pdf" H 9550 1900 50  0001 C CNN
 	1    9550 1900
 	1    0    0    -1  
@@ -1032,6 +1032,4 @@ Text Label 8250 1800 0    50   ~ 0
 RTC_SDA
 Text HLabel 3550 2400 2    50   Input ~ 0
 LED_DATA
-Wire Wire Line
-	3550 2400 3400 2400
 $EndSCHEMATC
