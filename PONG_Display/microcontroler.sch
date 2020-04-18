@@ -248,14 +248,14 @@ Wire Wire Line
 	4300 5450 4300 5600
 Wire Wire Line
 	4300 5900 4300 6100
-Text GLabel 5650 2300 2    50   Output ~ 0
+Text GLabel 3550 2300 2    50   Output ~ 0
 DHT22_DATA
-Text GLabel 4350 4200 2    50   Input ~ 0
+Text GLabel 4000 4200 2    50   Input ~ 0
 PIR_SENSOR_OUT
 Wire Wire Line
-	3400 2300 5650 2300
+	3400 2300 3550 2300
 Wire Wire Line
-	3400 4200 4350 4200
+	3400 4200 4000 4200
 $Comp
 L power:GND #PWR0146
 U 1 1 5E881951
@@ -433,7 +433,7 @@ U 1 1 5E8B5C55
 P 6400 3550
 F 0 "D4" V 6354 3629 50  0000 L CNN
 F 1 "D_Zener" V 6445 3629 50  0000 L CNN
-F 2 "Diode_THT:D_T-1_P10.16mm_Horizontal" H 6400 3550 50  0001 C CNN
+F 2 "Diode_THT:D_DO-34_SOD68_P7.62mm_Horizontal" H 6400 3550 50  0001 C CNN
 F 3 "~" H 6400 3550 50  0001 C CNN
 	1    6400 3550
 	0    1    1    0   
@@ -454,7 +454,7 @@ Wire Wire Line
 Wire Wire Line
 	6300 4300 6300 4200
 Wire Wire Line
-	6150 3800 5500 3800
+	6150 3800 5650 3800
 Connection ~ 6150 3800
 $Comp
 L Device:R R6
@@ -534,14 +534,14 @@ Wire Notes Line
 	600  7700 600  5500
 Text Notes 800  5650 0    50   ~ 0
 Złącze programowania mikrokontrolera
-Text GLabel 3850 4000 2    50   BiDi ~ 0
+Text GLabel 3550 4100 2    50   BiDi ~ 0
 ESP_RX
-Text GLabel 3850 4100 2    50   BiDi ~ 0
+Text GLabel 3550 4000 2    50   BiDi ~ 0
 ESP_TX
 Wire Wire Line
-	3400 4000 3850 4000
+	3400 4000 3550 4000
 Wire Wire Line
-	3400 4100 3850 4100
+	3400 4100 3550 4100
 $Comp
 L Timer:MCP7940N-xST U5
 U 1 1 5E92B5C5
@@ -666,7 +666,7 @@ U 1 1 5E951C28
 P 9950 1150
 F 0 "BT1" V 10205 1200 50  0000 C CNN
 F 1 "Battery_Cell" V 10114 1200 50  0000 C CNN
-F 2 "Battery:BatteryHolder_Keystone_1058_1x2032" V 9950 1210 50  0001 C CNN
+F 2 "Battery:BatteryHolder_Keystone_103_1x20mm" V 9950 1210 50  0001 C CNN
 F 3 "~" V 9950 1210 50  0001 C CNN
 	1    9950 1150
 	0    -1   -1   0   
@@ -979,10 +979,10 @@ F 3 "" H 5300 6700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_POT RV?
+L Device:R_POT RV2
 U 1 1 5E88F324
 P 1100 2500
-F 0 "RV?" H 1030 2454 50  0000 R CNN
+F 0 "RV2" H 1030 2454 50  0000 R CNN
 F 1 "R_POT" H 1030 2545 50  0000 R CNN
 F 2 "Potentiometer_THT:Potentiometer_Piher_PT-6-V_Vertical" H 1100 2500 50  0001 C CNN
 F 3 "~" H 1100 2500 50  0001 C CNN
@@ -990,10 +990,10 @@ F 3 "~" H 1100 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0136
 U 1 1 5E88F32A
 P 1150 2850
-F 0 "#PWR?" H 1150 2600 50  0001 C CNN
+F 0 "#PWR0136" H 1150 2600 50  0001 C CNN
 F 1 "GND" H 1155 2677 50  0000 C CNN
 F 2 "" H 1150 2850 50  0001 C CNN
 F 3 "" H 1150 2850 50  0001 C CNN
@@ -1008,4 +1008,19 @@ Wire Wire Line
 	1100 2350 1100 1900
 Wire Wire Line
 	1250 2500 2200 2500
+Text GLabel 3550 3700 2    50   BiDi ~ 0
+RTC_SCL
+Text GLabel 3550 3600 2    50   BiDi ~ 0
+RTC_SDA
+Wire Wire Line
+	3400 3600 3550 3600
+Wire Wire Line
+	3400 3700 3550 3700
+Text GLabel 5650 3650 1    50   Input ~ 0
+ESP_RST
+Wire Wire Line
+	5650 3650 5650 3800
+Connection ~ 5650 3800
+Wire Wire Line
+	5650 3800 5500 3800
 $EndSCHEMATC

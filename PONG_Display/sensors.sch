@@ -21,7 +21,7 @@ AR Path="/5E80CCDD/5E82C0DD" Ref="J?"  Part="1"
 AR Path="/5E80B6DE/5E82C0DD" Ref="J3"  Part="1" 
 F 0 "J3" H 6330 2692 50  0000 L CNN
 F 1 "DHT22_Conn" H 6330 2601 50  0000 L CNN
-F 2 "" H 6250 2650 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-3-3.5-H_1x03_P3.50mm_Horizontal" H 6250 2650 50  0001 C CNN
 F 3 "~" H 6250 2650 50  0001 C CNN
 	1    6250 2650
 	1    0    0    -1  
@@ -34,7 +34,7 @@ AR Path="/5E80CCDD/5E82C0E3" Ref="J?"  Part="1"
 AR Path="/5E80B6DE/5E82C0E3" Ref="J4"  Part="1" 
 F 0 "J4" H 6330 3592 50  0000 L CNN
 F 1 "LightSensor_Conn" H 6330 3501 50  0000 L CNN
-F 2 "Connector_Molex:Molex_CLIK-Mate_502382-0270_1x02-1MP_P1.25mm_Vertical" H 6250 3600 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 6250 3600 50  0001 C CNN
 F 3 "~" H 6250 3600 50  0001 C CNN
 	1    6250 3600
 	1    0    0    -1  
@@ -53,7 +53,7 @@ AR Path="/5E80CCDD/5E82C0F3" Ref="J?"  Part="1"
 AR Path="/5E80B6DE/5E82C0F3" Ref="J5"  Part="1" 
 F 0 "J5" H 6330 4742 50  0000 L CNN
 F 1 "PIR_Sensor_Conn" H 6330 4651 50  0000 L CNN
-F 2 "" H 6250 4700 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-3-3.5-H_1x03_P3.50mm_Horizontal" H 6250 4700 50  0001 C CNN
 F 3 "~" H 6250 4700 50  0001 C CNN
 	1    6250 4700
 	1    0    0    -1  

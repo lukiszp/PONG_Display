@@ -21,7 +21,7 @@ AR Path="/5E80CCDD/5E83917B" Ref="J?"  Part="1"
 AR Path="/5E80C133/5E83917B" Ref="J1"  Part="1" 
 F 0 "J1" H 8930 2842 50  0000 L CNN
 F 1 "LED_Display_Conn" H 8930 2751 50  0000 L CNN
-F 2 "" H 8850 2800 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 8850 2800 50  0001 C CNN
 F 3 "~" H 8850 2800 50  0001 C CNN
 	1    8850 2800
 	1    0    0    -1  
