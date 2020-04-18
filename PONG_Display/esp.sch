@@ -134,15 +134,85 @@ Wire Wire Line
 Wire Wire Line
 	3850 3350 4500 3350
 Wire Notes Line
-	2900 3900 6100 3900
-Wire Notes Line
 	6100 3900 6100 1300
 Wire Notes Line
-	6100 1300 2900 1300
-Wire Notes Line
-	2900 1300 2900 3900
+	2650 1300 2650 3900
 Text Notes 3400 1500 0    50   ~ 0
 Złącze do modułu WiFi oraz programatora RS232
 Text Label 3000 1050 0    50   ~ 0
 Do_sprawdzenia_przed_rysowaniem_pcb_czy_na_pewno_piny_dobrze_przypisane
+Wire Notes Line
+	2650 1300 6100 1300
+Wire Notes Line
+	2650 3900 6100 3900
+Wire Notes Line
+	10700 1300 10700 3950
+Wire Notes Line
+	10700 3950 7000 3950
+Wire Notes Line
+	7000 3950 7000 1300
+Wire Notes Line
+	7000 1300 10700 1300
+Text Notes 8100 1500 0    50   ~ 0
+Przełączniki programowania ESP przez RS232
+Text GLabel 8300 2250 0    50   Input ~ 0
+ESP_CH_PD
+Text GLabel 8300 2700 0    50   BiDi ~ 0
+ESP_GPIO0
+$Comp
+L power:+3.3V #PWR01
+U 1 1 5E9D6E89
+P 9550 1900
+F 0 "#PWR01" H 9550 1750 50  0001 C CNN
+F 1 "+3.3V" H 9565 2073 50  0000 C CNN
+F 2 "" H 9550 1900 50  0001 C CNN
+F 3 "" H 9550 1900 50  0001 C CNN
+	1    9550 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5E9D779A
+P 9550 3050
+F 0 "#PWR02" H 9550 2800 50  0001 C CNN
+F 1 "GND" H 9555 2877 50  0000 C CNN
+F 2 "" H 9550 3050 50  0001 C CNN
+F 3 "" H 9550 3050 50  0001 C CNN
+	1    9550 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 1900 9550 2150
+Wire Wire Line
+	9550 2150 9050 2150
+Wire Wire Line
+	9050 2600 9550 2600
+Wire Wire Line
+	9550 2600 9550 3050
+Wire Wire Line
+	8300 2250 8650 2250
+Wire Wire Line
+	8300 2700 8650 2700
+$Comp
+L Switch:SW_Push_SPDT SW2
+U 1 1 5E9E35EF
+P 8850 2250
+F 0 "SW2" H 8850 2535 50  0000 C CNN
+F 1 "SW_Push_SPDT" H 8850 2444 50  0000 C CNN
+F 2 "LIB_PONG_Display:SPDT_switch" H 8850 2250 50  0001 C CNN
+F 3 "~" H 8850 2250 50  0001 C CNN
+	1    8850 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_SPDT SW3
+U 1 1 5E9E3E9D
+P 8850 2700
+F 0 "SW3" H 8850 2985 50  0000 C CNN
+F 1 "SW_Push_SPDT" H 8850 2894 50  0000 C CNN
+F 2 "LIB_PONG_Display:SPDT_switch" H 8850 2700 50  0001 C CNN
+F 3 "~" H 8850 2700 50  0001 C CNN
+	1    8850 2700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

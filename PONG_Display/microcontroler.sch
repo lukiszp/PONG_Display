@@ -248,14 +248,14 @@ Wire Wire Line
 	4300 5450 4300 5600
 Wire Wire Line
 	4300 5900 4300 6100
-Text GLabel 3500 2300 2    50   Output ~ 0
+Text GLabel 3550 2300 2    50   Output ~ 0
 DHT22_DATA
-Text GLabel 4200 4200 2    50   Input ~ 0
+Text GLabel 4000 4200 2    50   Input ~ 0
 PIR_SENSOR_OUT
 Wire Wire Line
-	3400 2300 3500 2300
+	3400 2300 3550 2300
 Wire Wire Line
-	3400 4200 4200 4200
+	3400 4200 4000 4200
 $Comp
 L power:GND #PWR0146
 U 1 1 5E881951
@@ -433,7 +433,7 @@ U 1 1 5E8B5C55
 P 6400 3550
 F 0 "D4" V 6354 3629 50  0000 L CNN
 F 1 "D_Zener" V 6445 3629 50  0000 L CNN
-F 2 "Diode_THT:D_T-1_P10.16mm_Horizontal" H 6400 3550 50  0001 C CNN
+F 2 "Diode_THT:D_DO-34_SOD68_P7.62mm_Horizontal" H 6400 3550 50  0001 C CNN
 F 3 "~" H 6400 3550 50  0001 C CNN
 	1    6400 3550
 	0    1    1    0   
@@ -534,14 +534,14 @@ Wire Notes Line
 	600  7700 600  5500
 Text Notes 800  5650 0    50   ~ 0
 Złącze programowania mikrokontrolera
-Text GLabel 3850 4000 2    50   BiDi ~ 0
+Text GLabel 3550 4000 2    50   BiDi ~ 0
 ESP_RX
-Text GLabel 3850 4100 2    50   BiDi ~ 0
+Text GLabel 3550 4100 2    50   BiDi ~ 0
 ESP_TX
 Wire Wire Line
-	3400 4000 3850 4000
+	3400 4000 3550 4000
 Wire Wire Line
-	3400 4100 3850 4100
+	3400 4100 3550 4100
 $Comp
 L Timer:MCP7940N-xST U5
 U 1 1 5E92B5C5
@@ -1008,4 +1008,12 @@ Wire Wire Line
 	1100 2350 1100 1900
 Wire Wire Line
 	1250 2500 2200 2500
+Text GLabel 3550 3700 2    50   BiDi ~ 0
+RTC_SCL
+Text GLabel 3550 3600 2    50   BiDi ~ 0
+RTC_SDA
+Wire Wire Line
+	3400 3600 3550 3600
+Wire Wire Line
+	3400 3700 3550 3700
 $EndSCHEMATC
