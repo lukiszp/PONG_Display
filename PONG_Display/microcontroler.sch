@@ -534,9 +534,9 @@ Wire Notes Line
 	600  7700 600  5500
 Text Notes 800  5650 0    50   ~ 0
 Złącze programowania mikrokontrolera
-Text GLabel 3550 4000 2    50   BiDi ~ 0
-ESP_RX
 Text GLabel 3550 4100 2    50   BiDi ~ 0
+ESP_RX
+Text GLabel 3550 4000 2    50   BiDi ~ 0
 ESP_TX
 Wire Wire Line
 	3400 4000 3550 4000
