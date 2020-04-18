@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:PONG_Display-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -134,6 +135,8 @@ F7 "ESP_GPIO2" I L 8400 2800 50
 $EndSheet
 Text Notes 950  1150 0    197  Italic 39
 To do:\n
-Text Notes 700  4350 0    79   ~ 0
-1)Nie przypisany LED_DATA\n\n2)Poziomy logiczne TX i RX\n\n3)Jakie GPIO z klocka \n\n4)Czy pot do przetwornicy\n\n5)5,6,21 pin Atmegi\n\n6)RTC może brać 5V\n\n7)RTC sprawdzić\n\n8)Przypisać piny ESP\n\n9)Reset klocka i ESP ten sam?\n\n10)Omówić klocek\n\n11)Reset ESP\n\n12)Programator ESP\n
+Text Notes 700  2500 0    79   ~ 0
+1)wybór 5V czy 12V\n2)Poziomy logiczne TX i RX\n3)stany na pinach -\n> czy programowo\n4)Jakie piny na GPIO uC\n5)GPIO od ESP czy potrzebne \n6)Jaka prędkość I2C \n->rezystory 2k/10k\n7)Przypisać piny ESP
+Text Notes 3800 1200 0    394  Italic 79
+Wybór 5V czy 12V
 $EndSCHEMATC
