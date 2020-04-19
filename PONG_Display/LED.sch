@@ -29,25 +29,6 @@ F 3 "~" H 8850 2800 50  0001 C CNN
 $EndComp
 Text Notes 7750 7500 0    50   ~ 0
 Schemat wyświetlacza LED
-$Comp
-L power:GND #PWR05
-U 1 1 5E85BD1D
-P 8500 3050
-F 0 "#PWR05" H 8500 2800 50  0001 C CNN
-F 1 "GND" H 8505 2877 50  0000 C CNN
-F 2 "" H 8500 3050 50  0001 C CNN
-F 3 "" H 8500 3050 50  0001 C CNN
-	1    8500 3050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8500 2550 8500 2700
-Wire Wire Line
-	8500 2700 8650 2700
-Wire Wire Line
-	8500 2900 8500 3050
-Wire Wire Line
-	8500 2900 8650 2900
 Text Notes 8250 2000 0    50   ~ 0
 Złącze wyjścia na wyświetlacz
 $Comp
@@ -146,19 +127,6 @@ Wire Wire Line
 	1900 2550 2050 2550
 $Comp
 L power:+5V #PWR?
-U 1 1 5EA0B092
-P 8500 2550
-AR Path="/5E80B14C/5EA0B092" Ref="#PWR?"  Part="1" 
-AR Path="/5E80C133/5EA0B092" Ref="#PWR04"  Part="1" 
-F 0 "#PWR04" H 8500 2400 50  0001 C CNN
-F 1 "+5V" H 8515 2723 50  0000 C CNN
-F 2 "" H 8500 2550 50  0001 C CNN
-F 3 "" H 8500 2550 50  0001 C CNN
-	1    8500 2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR?
 U 1 1 5EA0B611
 P 3500 2300
 AR Path="/5E80B14C/5EA0B611" Ref="#PWR?"  Part="1" 
@@ -170,4 +138,6 @@ F 3 "" H 3500 2300 50  0001 C CNN
 	1    3500 2300
 	1    0    0    -1  
 $EndComp
+NoConn ~ 8650 2700
+NoConn ~ 8650 2900
 $EndSCHEMATC
