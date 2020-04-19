@@ -137,6 +137,4 @@ Text Notes 950  1150 0    197  Italic 39
 To do:\n
 Text Notes 700  2500 0    79   ~ 0
 1)wybór 5V czy 12V\n2)Poziomy logiczne TX i RX\n3)stany na pinach -\n> czy programowo\n4)Jakie piny na GPIO uC\n5)GPIO od ESP czy potrzebne \n6)Jaka prędkość I2C \n->rezystory 2k/10k\n7)Przypisać piny ESP
-Text Notes 3800 1200 0    394  Italic 79
-Wybór 5V czy 12V
 $EndSCHEMATC
