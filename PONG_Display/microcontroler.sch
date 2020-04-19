@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:PONG_Display-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -971,9 +972,9 @@ PIR_SENSOR_OUT
 Text HLabel 3550 2300 2    50   Input ~ 0
 DHT22_DATA
 Text HLabel 3550 4000 2    50   Input ~ 0
-ESP_TX
+ESP_TX_HIGH
 Text HLabel 3550 4100 2    50   Input ~ 0
-ESP_RX
+ESP_RX_HIGH
 Text Label 3550 3600 0    50   ~ 0
 RTC_SDA
 Text Label 3550 3700 0    50   ~ 0

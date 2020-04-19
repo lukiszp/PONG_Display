@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:PONG_Display-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -193,10 +194,6 @@ F 3 "~" H 8850 2700 50  0001 C CNN
 	1    8850 2700
 	1    0    0    -1  
 $EndComp
-Text HLabel 3950 2050 0    50   Input ~ 0
-ESP_RX
-Text HLabel 4700 2350 2    50   Input ~ 0
-ESP_TX
 Text HLabel 4700 2150 2    50   Input ~ 0
 ESP_RST
 Text HLabel 4700 2250 2    50   Input ~ 0
@@ -205,27 +202,12 @@ Text HLabel 3950 2150 0    50   Input ~ 0
 ESP_GPIO0
 Text HLabel 3950 2250 0    50   Input ~ 0
 ESP_GPIO2
-Text HLabel 4350 3150 0    50   Input ~ 0
-ESP_RX
-Text HLabel 4350 3250 0    50   Input ~ 0
-ESP_TX
 Text HLabel 8300 2250 0    50   Input ~ 0
 ESP_CH_PD
 Text HLabel 8300 2700 0    50   Input ~ 0
 ESP_GPIO0
 NoConn ~ 9050 2350
 NoConn ~ 9050 2800
-$Comp
-L power:+5V #PWR064
-U 1 1 5E9DFF82
-P 4700 5250
-F 0 "#PWR064" H 4700 5100 50  0001 C CNN
-F 1 "+5V" H 4715 5423 50  0000 C CNN
-F 2 "" H 4700 5250 50  0001 C CNN
-F 3 "" H 4700 5250 50  0001 C CNN
-	1    4700 5250
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR065
 U 1 1 5E9DFF88
@@ -271,14 +253,9 @@ F 3 "~" H 4800 5500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4700 5250 4800 5250
-Wire Wire Line
 	4800 5250 4800 5350
 Wire Wire Line
-	4700 5250 4550 5250
-Wire Wire Line
 	4550 5250 4550 5350
-Connection ~ 4700 5250
 Wire Wire Line
 	4550 5650 4550 5750
 Wire Wire Line
@@ -341,4 +318,218 @@ Text HLabel 4050 5750 0    50   Input ~ 0
 ESP_RST
 Wire Wire Line
 	4600 2050 4800 2050
+Text Label 4700 2350 0    50   ~ 0
+ESP_TX
+Text Label 3950 2050 2    50   ~ 0
+ESP_RX
+Text Label 4350 3250 2    50   ~ 0
+ESP_TX
+Text Label 4350 3150 2    50   ~ 0
+ESP_RX
+Text HLabel 10050 5050 2    50   Input ~ 0
+ESP_RX_HIGH
+Text HLabel 10050 6100 2    50   Input ~ 0
+ESP_TX_HIGH
+Text Label 8050 5050 2    50   ~ 0
+ESP_RX
+Text Label 8050 6100 2    50   ~ 0
+ESP_TX
+$Comp
+L Device:Q_NMOS_DGS Q?
+U 1 1 5E9CF246
+P 9100 4950
+F 0 "Q?" V 9351 4950 50  0000 C CNN
+F 1 "2N7000" V 9442 4950 50  0000 C CNN
+F 2 "" H 9300 5050 50  0001 C CNN
+F 3 "~" H 9100 4950 50  0001 C CNN
+	1    9100 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_NMOS_DGS Q?
+U 1 1 5E9D0B65
+P 9100 6000
+F 0 "Q?" V 9351 6000 50  0000 C CNN
+F 1 "2N7000" V 9442 6000 50  0000 C CNN
+F 2 "" H 9300 6100 50  0001 C CNN
+F 3 "~" H 9100 6000 50  0001 C CNN
+	1    9100 6000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8050 5050 8650 5050
+Wire Wire Line
+	8050 6100 8650 6100
+Wire Wire Line
+	9300 6100 9650 6100
+Wire Wire Line
+	9300 5050 9650 5050
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E9D4B92
+P 8650 4600
+F 0 "#PWR?" H 8650 4450 50  0001 C CNN
+F 1 "+3.3V" H 8665 4773 50  0000 C CNN
+F 2 "" H 8650 4600 50  0001 C CNN
+F 3 "" H 8650 4600 50  0001 C CNN
+	1    8650 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E9D533A
+P 8650 5650
+F 0 "#PWR?" H 8650 5500 50  0001 C CNN
+F 1 "+3.3V" H 8665 5823 50  0000 C CNN
+F 2 "" H 8650 5650 50  0001 C CNN
+F 3 "" H 8650 5650 50  0001 C CNN
+	1    8650 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E9D5B4F
+P 8650 5850
+F 0 "R?" H 8720 5896 50  0000 L CNN
+F 1 "10k" H 8720 5805 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 8580 5850 50  0001 C CNN
+F 3 "~" H 8650 5850 50  0001 C CNN
+	1    8650 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 4950 8650 5050
+Connection ~ 8650 5050
+Wire Wire Line
+	8650 5050 8900 5050
+Wire Wire Line
+	8650 4600 8650 4650
+Wire Wire Line
+	8650 6000 8650 6100
+Connection ~ 8650 6100
+Wire Wire Line
+	8650 6100 8900 6100
+Wire Wire Line
+	8650 5650 8650 5700
+$Comp
+L Device:R R?
+U 1 1 5E9D56BD
+P 8650 4800
+F 0 "R?" H 8720 4846 50  0000 L CNN
+F 1 "10k" H 8720 4755 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 8580 4800 50  0001 C CNN
+F 3 "~" H 8650 4800 50  0001 C CNN
+	1    8650 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E9D8E3B
+P 9650 4600
+F 0 "#PWR?" H 9650 4450 50  0001 C CNN
+F 1 "+5V" H 9665 4773 50  0000 C CNN
+F 2 "" H 9650 4600 50  0001 C CNN
+F 3 "" H 9650 4600 50  0001 C CNN
+	1    9650 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E9D96BA
+P 9650 5650
+F 0 "#PWR?" H 9650 5500 50  0001 C CNN
+F 1 "+5V" H 9665 5823 50  0000 C CNN
+F 2 "" H 9650 5650 50  0001 C CNN
+F 3 "" H 9650 5650 50  0001 C CNN
+	1    9650 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E9D99AA
+P 9650 4800
+F 0 "R?" H 9720 4846 50  0000 L CNN
+F 1 "10k" H 9720 4755 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 9580 4800 50  0001 C CNN
+F 3 "~" H 9650 4800 50  0001 C CNN
+	1    9650 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E9D9C8C
+P 9650 5850
+F 0 "R?" H 9720 5896 50  0000 L CNN
+F 1 "10k" H 9720 5805 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 9580 5850 50  0001 C CNN
+F 3 "~" H 9650 5850 50  0001 C CNN
+	1    9650 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 4600 9650 4650
+Wire Wire Line
+	9650 4950 9650 5050
+Connection ~ 9650 5050
+Wire Wire Line
+	9650 5050 10050 5050
+Wire Wire Line
+	9650 5650 9650 5700
+Wire Wire Line
+	9650 6000 9650 6100
+Connection ~ 9650 6100
+Wire Wire Line
+	9650 6100 10050 6100
+Wire Wire Line
+	4550 5250 4700 5250
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E9DD25C
+P 4700 5250
+F 0 "#PWR?" H 4700 5100 50  0001 C CNN
+F 1 "+3.3V" H 4715 5423 50  0000 C CNN
+F 2 "" H 4700 5250 50  0001 C CNN
+F 3 "" H 4700 5250 50  0001 C CNN
+	1    4700 5250
+	1    0    0    -1  
+$EndComp
+Connection ~ 4700 5250
+Wire Wire Line
+	4700 5250 4800 5250
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E9E0D36
+P 9100 4600
+F 0 "#PWR?" H 9100 4450 50  0001 C CNN
+F 1 "+3.3V" H 9115 4773 50  0000 C CNN
+F 2 "" H 9100 4600 50  0001 C CNN
+F 3 "" H 9100 4600 50  0001 C CNN
+	1    9100 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E9E0F18
+P 9100 5650
+F 0 "#PWR?" H 9100 5500 50  0001 C CNN
+F 1 "+3.3V" H 9115 5823 50  0000 C CNN
+F 2 "" H 9100 5650 50  0001 C CNN
+F 3 "" H 9100 5650 50  0001 C CNN
+	1    9100 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 4600 9100 4750
+Wire Wire Line
+	9100 5650 9100 5800
+Text Notes 8550 4250 0    50   ~ 0
+konwerter stanów logicznych\n
+Wire Notes Line
+	7000 4050 10700 4050
+Wire Notes Line
+	10700 4050 10700 6500
+Wire Notes Line
+	10700 6500 7000 6500
+Wire Notes Line
+	7000 6500 7000 4050
 $EndSCHEMATC
