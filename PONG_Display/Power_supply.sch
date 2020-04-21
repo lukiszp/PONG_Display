@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:PONG_Display-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -118,7 +117,7 @@ U 1 1 5E86541E
 P 7700 1900
 F 0 "C3" H 7815 1946 50  0000 L CNN
 F 1 "100n" H 7815 1855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 7738 1750 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7738 1750 50  0001 C CNN
 F 3 "~" H 7700 1900 50  0001 C CNN
 	1    7700 1900
 	1    0    0    -1  
@@ -129,7 +128,7 @@ U 1 1 5E8658D9
 P 8800 1900
 F 0 "C4" H 8915 1946 50  0000 L CNN
 F 1 "10u" H 8915 1855 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 8838 1750 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 8838 1750 50  0001 C CNN
 F 3 "~" H 8800 1900 50  0001 C CNN
 	1    8800 1900
 	1    0    0    -1  
@@ -140,7 +139,7 @@ U 1 1 5E8660CC
 P 9200 1900
 F 0 "C5" H 9318 1946 50  0000 L CNN
 F 1 "100n" H 9318 1855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 9238 1750 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9238 1750 50  0001 C CNN
 F 3 "~" H 9200 1900 50  0001 C CNN
 	1    9200 1900
 	1    0    0    -1  
@@ -353,7 +352,7 @@ U 1 1 5EA039B3
 P 2400 1750
 F 0 "F1" V 2203 1750 50  0000 C CNN
 F 1 "Fuse" V 2294 1750 50  0000 C CNN
-F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_FAB_0031-355x_Horizontal_Closed" V 2330 1750 50  0001 C CNN
+F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open" V 2330 1750 50  0001 C CNN
 F 3 "~" H 2400 1750 50  0001 C CNN
 	1    2400 1750
 	0    1    1    0   
