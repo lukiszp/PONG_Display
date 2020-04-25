@@ -13,20 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L PONG_Display-rescue:AVR-ISP-10-Connector J?
-U 1 1 5E830B15
-P 1650 6750
-AR Path="/5E80CCDD/5E830B15" Ref="J?"  Part="1" 
-AR Path="/5E80B18F/5E830B15" Ref="J6"  Part="1" 
-AR Path="/5E830B15" Ref="J?"  Part="1" 
-F 0 "J6" H 1320 6846 50  0000 R CNN
-F 1 "AVR-ISP-10" H 1320 6755 50  0000 R CNN
-F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical" V 1400 6800 50  0001 C CNN
-F 3 " ~" H 375 6200 50  0001 C CNN
-	1    1650 6750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1550 6050 1550 6250
 Wire Wire Line
@@ -1048,6 +1034,17 @@ F 1 "+5V" H 3865 6873 50  0000 C CNN
 F 2 "" H 3850 6700 50  0001 C CNN
 F 3 "" H 3850 6700 50  0001 C CNN
 	1    3850 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AVR-ISP-6 J?
+U 1 1 5EA88C51
+P 1650 6750
+F 0 "J?" H 1321 6846 50  0000 R CNN
+F 1 "AVR-ISP-6" H 1321 6755 50  0000 R CNN
+F 2 "" V 1400 6800 50  0001 C CNN
+F 3 " ~" H 375 6200 50  0001 C CNN
+	1    1650 6750
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

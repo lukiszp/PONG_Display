@@ -21,7 +21,7 @@ AR Path="/5E80CCDD/5E83DA30" Ref="J?"  Part="1"
 AR Path="/5E80B14C/5E83DA30" Ref="J2"  Part="1" 
 AR Path="/5E83DA30" Ref="J?"  Part="1" 
 F 0 "J2" H 1668 1967 50  0000 C CNN
-F 1 "Input_Supply+12V" H 1668 1876 50  0000 C CNN
+F 1 "Input_Supply+5V" H 1668 1876 50  0000 C CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1750 1750 50  0001 C CNN
 F 3 "~" H 1750 1750 50  0001 C CNN
 	1    1750 1750
@@ -352,7 +352,7 @@ U 1 1 5EA039B3
 P 2400 1750
 F 0 "F1" V 2203 1750 50  0000 C CNN
 F 1 "Fuse" V 2294 1750 50  0000 C CNN
-F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open" V 2330 1750 50  0001 C CNN
+F 2 "Fuse:Fuse_Littelfuse_372_D8.50mm" V 2330 1750 50  0001 C CNN
 F 3 "~" H 2400 1750 50  0001 C CNN
 	1    2400 1750
 	0    1    1    0   
@@ -360,7 +360,7 @@ $EndComp
 Wire Wire Line
 	2550 1750 2850 1750
 Wire Wire Line
-	2250 1750 1950 1750
+	2250 1750 2200 1750
 $Comp
 L power:+5V #PWR06
 U 1 1 5EA07081
@@ -372,4 +372,20 @@ F 3 "" H 2850 1600 50  0001 C CNN
 	1    2850 1600
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:+5VA #PWR0111
+U 1 1 5EA465DD
+P 2200 1600
+F 0 "#PWR0111" H 2200 1450 50  0001 C CNN
+F 1 "+5VA" H 2215 1773 50  0000 C CNN
+F 2 "" H 2200 1600 50  0001 C CNN
+F 3 "" H 2200 1600 50  0001 C CNN
+	1    2200 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 1600 2200 1750
+Connection ~ 2200 1750
+Wire Wire Line
+	2200 1750 1950 1750
 $EndSCHEMATC

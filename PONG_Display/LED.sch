@@ -24,7 +24,7 @@ F 1 "LED_Display_Conn" H 8930 2751 50  0000 L CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 8850 2800 50  0001 C CNN
 F 3 "~" H 8850 2800 50  0001 C CNN
 	1    8850 2800
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Text Notes 7750 7500 0    50   ~ 0
 Schemat wyświetlacza LED
@@ -137,6 +137,34 @@ F 3 "" H 3500 2300 50  0001 C CNN
 	1    3500 2300
 	1    0    0    -1  
 $EndComp
-NoConn ~ 8650 2700
-NoConn ~ 8650 2900
+$Comp
+L power:GND #PWR0109
+U 1 1 5EB33F3E
+P 8600 3100
+F 0 "#PWR0109" H 8600 2850 50  0001 C CNN
+F 1 "GND" H 8605 2927 50  0000 C CNN
+F 2 "" H 8600 3100 50  0001 C CNN
+F 3 "" H 8600 3100 50  0001 C CNN
+	1    8600 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 2500 8600 2700
+Wire Wire Line
+	8600 2700 8650 2700
+Wire Wire Line
+	8600 3100 8600 2900
+Wire Wire Line
+	8600 2900 8650 2900
+$Comp
+L power:+5VA #PWR0110
+U 1 1 5EA4877F
+P 8600 2500
+F 0 "#PWR0110" H 8600 2350 50  0001 C CNN
+F 1 "+5VA" H 8615 2673 50  0000 C CNN
+F 2 "" H 8600 2500 50  0001 C CNN
+F 3 "" H 8600 2500 50  0001 C CNN
+	1    8600 2500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
