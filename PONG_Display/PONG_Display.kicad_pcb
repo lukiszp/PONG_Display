@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 38)
+    (drawings 42)
     (tracks 542)
     (zones 0)
     (modules 68)
@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 1)
+    (last_trace_width 0.25)
     (user_trace_width 0.3)
     (user_trace_width 0.5)
     (user_trace_width 1)
@@ -2976,6 +2976,18 @@
     )
   )
 
+  (gr_text "GPIO 3" (at 78.105 57.15 90) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (gr_text "GPIO 2" (at 75.565 57.15 90) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (gr_text "GPIO 1" (at 73.025 57.15 90) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (gr_text "GPIO 0" (at 70.485 57.15 90) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
   (gr_text GND (at 21.0185 46.1645) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -3398,7 +3410,6 @@
   (segment (start 61.195 52.51) (end 61.214 55.499) (width 0.5) (layer F.Cu) (net 16) (status 10))
   (segment (start 63.825 65.461) (end 64.643 64.643) (width 0.5) (layer B.Cu) (net 17) (status 20))
   (segment (start 63.825 71.47) (end 63.825 65.461) (width 0.5) (layer B.Cu) (net 17) (status 10))
-  (segment (start 17.78 25.4) (end 17.96 25.4) (width 2) (layer F.Cu) (net 48) (status 30))
   (segment (start 58.795 44.01) (end 58.795 46.095) (width 0.5) (layer F.Cu) (net 18) (status 10))
   (via (at 59.055 46.355) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 18))
   (segment (start 58.795 46.095) (end 59.055 46.355) (width 0.5) (layer F.Cu) (net 18))
@@ -3593,6 +3604,7 @@
   (segment (start 35.925 52.705) (end 35.56 53.07) (width 0.5) (layer B.Cu) (net 47) (status 30))
   (segment (start 36.83 52.705) (end 35.925 52.705) (width 0.5) (layer B.Cu) (net 47) (status 20))
   (segment (start 36.6525 57.15) (end 37.265 57.15) (width 1) (layer B.Cu) (net 47) (status 10))
+  (segment (start 17.78 25.4) (end 17.96 25.4) (width 2) (layer F.Cu) (net 48) (status 30))
   (segment (start 38.227 13.843) (end 26.162 13.843) (width 1) (layer F.Cu) (net 48))
   (segment (start 40.5765 16.1925) (end 38.227 13.843) (width 1) (layer F.Cu) (net 48))
   (segment (start 26.162 13.843) (end 24.003 16.002) (width 1) (layer F.Cu) (net 48))
