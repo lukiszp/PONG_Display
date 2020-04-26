@@ -22,7 +22,7 @@ AR Path="/5E80B14C/5E83DA30" Ref="J2"  Part="1"
 AR Path="/5E83DA30" Ref="J?"  Part="1" 
 F 0 "J2" H 1668 1967 50  0000 C CNN
 F 1 "Input_Supply+5V" H 1668 1876 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1750 1750 50  0001 C CNN
+F 2 "TerminalBlock_RND:TerminalBlock_RND_205-00001_1x02_P5.00mm_Horizontal" H 1750 1750 50  0001 C CNN
 F 3 "~" H 1750 1750 50  0001 C CNN
 	1    1750 1750
 	-1   0    0    -1  
