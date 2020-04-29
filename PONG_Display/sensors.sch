@@ -39,7 +39,7 @@ F 1 "PIR_Sensor_Conn" H 6330 4651 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-3-3.5-H_1x03_P3.50mm_Horizontal" H 6250 4700 50  0001 C CNN
 F 3 "~" H 6250 4700 50  0001 C CNN
 	1    6250 4700
-	1    0    0    1   
+	1    0    0    -1  
 $EndComp
 Text Notes 7750 7500 0    50   ~ 0
 Schemat układu czujników
