@@ -26,25 +26,8 @@ F 3 "~" H 6250 2650 50  0001 C CNN
 	1    6250 2650
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J?
-U 1 1 5E82C0E3
-P 6250 3600
-AR Path="/5E80CCDD/5E82C0E3" Ref="J?"  Part="1" 
-AR Path="/5E80B6DE/5E82C0E3" Ref="J4"  Part="1" 
-F 0 "J4" H 6330 3592 50  0000 L CNN
-F 1 "LightSensor_Conn" H 6330 3501 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 6250 3600 50  0001 C CNN
-F 3 "~" H 6250 3600 50  0001 C CNN
-	1    6250 3600
-	1    0    0    -1  
-$EndComp
-Text GLabel 4850 2650 0    50   Input ~ 0
-DHT22_DATA
 Wire Wire Line
 	4850 2650 6050 2650
-Text GLabel 5650 3700 0    50   Output ~ 0
-LIGHT_SENSOR_OUT
 $Comp
 L Connector_Generic:Conn_01x03 J?
 U 1 1 5E82C0F3
@@ -58,15 +41,13 @@ F 3 "~" H 6250 4700 50  0001 C CNN
 	1    6250 4700
 	1    0    0    -1  
 $EndComp
-Text GLabel 4750 4700 0    50   Output ~ 0
-PIR_OUT
 Text Notes 7750 7500 0    50   ~ 0
 Schemat układu czujników
 $Comp
-L power:+5V #PWR0131
+L power:+5V #PWR019
 U 1 1 5E853437
 P 5800 2450
-F 0 "#PWR0131" H 5800 2300 50  0001 C CNN
+F 0 "#PWR019" H 5800 2300 50  0001 C CNN
 F 1 "+5V" H 5815 2623 50  0000 C CNN
 F 2 "" H 5800 2450 50  0001 C CNN
 F 3 "" H 5800 2450 50  0001 C CNN
@@ -74,10 +55,10 @@ F 3 "" H 5800 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0132
+L power:+5V #PWR022
 U 1 1 5E853AD5
 P 5800 4500
-F 0 "#PWR0132" H 5800 4350 50  0001 C CNN
+F 0 "#PWR022" H 5800 4350 50  0001 C CNN
 F 1 "+5V" H 5815 4673 50  0000 C CNN
 F 2 "" H 5800 4500 50  0001 C CNN
 F 3 "" H 5800 4500 50  0001 C CNN
@@ -85,10 +66,10 @@ F 3 "" H 5800 4500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0133
+L power:GND #PWR023
 U 1 1 5E854167
 P 5800 4950
-F 0 "#PWR0133" H 5800 4700 50  0001 C CNN
+F 0 "#PWR023" H 5800 4700 50  0001 C CNN
 F 1 "GND" H 5805 4777 50  0000 C CNN
 F 2 "" H 5800 4950 50  0001 C CNN
 F 3 "" H 5800 4950 50  0001 C CNN
@@ -96,10 +77,10 @@ F 3 "" H 5800 4950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0134
+L power:GND #PWR020
 U 1 1 5E85474C
 P 5800 2900
-F 0 "#PWR0134" H 5800 2650 50  0001 C CNN
+F 0 "#PWR020" H 5800 2650 50  0001 C CNN
 F 1 "GND" H 5805 2727 50  0000 C CNN
 F 2 "" H 5800 2900 50  0001 C CNN
 F 3 "" H 5800 2900 50  0001 C CNN
@@ -133,10 +114,10 @@ Wire Notes Line
 Text Notes 4650 2150 0    50   ~ 0
 Złącza do czujników
 $Comp
-L power:+5V #PWR0135
+L power:+5V #PWR021
 U 1 1 5E91534B
 P 5800 3500
-F 0 "#PWR0135" H 5800 3350 50  0001 C CNN
+F 0 "#PWR021" H 5800 3350 50  0001 C CNN
 F 1 "+5V" H 5815 3673 50  0000 C CNN
 F 2 "" H 5800 3500 50  0001 C CNN
 F 3 "" H 5800 3500 50  0001 C CNN
@@ -151,4 +132,38 @@ Wire Wire Line
 	4750 4700 6050 4700
 Wire Wire Line
 	6050 3700 5650 3700
+Text HLabel 4850 2650 0    50   Input ~ 0
+DHT22_DATA
+Text HLabel 5650 3700 0    50   Input ~ 0
+LIGHT_SENSOR_OUT
+Text HLabel 4750 4700 0    50   Input ~ 0
+PIR_OUT
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 5EAE2D4C
+P 6250 3700
+AR Path="/5E80CCDD/5EAE2D4C" Ref="J?"  Part="1" 
+AR Path="/5E80B6DE/5EAE2D4C" Ref="J4"  Part="1" 
+F 0 "J4" H 6330 3742 50  0000 L CNN
+F 1 "LightSensor_Conn" H 6330 3651 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-3-3.5-H_1x03_P3.50mm_Horizontal" H 6250 3700 50  0001 C CNN
+F 3 "~" H 6250 3700 50  0001 C CNN
+	1    6250 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 5EAE348C
+P 5800 3900
+F 0 "#PWR0112" H 5800 3650 50  0001 C CNN
+F 1 "GND" H 5805 3727 50  0000 C CNN
+F 2 "" H 5800 3900 50  0001 C CNN
+F 3 "" H 5800 3900 50  0001 C CNN
+	1    5800 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 3800 5800 3800
+Wire Wire Line
+	5800 3800 5800 3900
 $EndSCHEMATC
