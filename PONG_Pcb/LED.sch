@@ -71,10 +71,6 @@ Wire Wire Line
 	2450 2750 2650 2750
 Wire Wire Line
 	3250 2550 3500 2550
-Wire Wire Line
-	3500 2550 3500 2300
-Wire Wire Line
-	3250 2750 3400 2750
 Wire Notes Line
 	1150 1050 4800 1050
 Wire Notes Line
@@ -85,38 +81,9 @@ Wire Notes Line
 	1150 3850 1150 1050
 Text Notes 1950 1350 0    50   ~ 0
 Układ izolatora 
-$Comp
-L Device:C C1
-U 1 1 5E90693A
-P 3400 2950
-F 0 "C1" H 3515 2996 50  0000 L CNN
-F 1 "100n" H 3515 2905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3438 2800 50  0001 C CNN
-F 3 "~" H 3400 2950 50  0001 C CNN
-	1    3400 2950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR02
-U 1 1 5E906F7A
-P 3400 3200
-F 0 "#PWR02" H 3400 2950 50  0001 C CNN
-F 1 "GND" H 3405 3027 50  0000 C CNN
-F 2 "" H 3400 3200 50  0001 C CNN
-F 3 "" H 3400 3200 50  0001 C CNN
-	1    3400 3200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3400 2750 3400 2800
-Connection ~ 3400 2750
-Wire Wire Line
-	3400 2750 3600 2750
-Wire Wire Line
-	3400 3100 3400 3200
 Text HLabel 1900 2550 0    50   Input ~ 0
 LED_DATA
-Text Label 3600 2750 0    50   ~ 0
+Text Label 3700 2750 0    50   ~ 0
 LED_DATA_ISO
 Text Label 7950 2800 0    50   ~ 0
 LED_DATA_ISO
@@ -127,14 +94,14 @@ Wire Wire Line
 $Comp
 L power:+5V #PWR?
 U 1 1 5EA0B611
-P 3500 2300
+P 3500 1900
 AR Path="/5E80B14C/5EA0B611" Ref="#PWR?"  Part="1" 
 AR Path="/5E80C133/5EA0B611" Ref="#PWR03"  Part="1" 
-F 0 "#PWR03" H 3500 2150 50  0001 C CNN
-F 1 "+5V" H 3515 2473 50  0000 C CNN
-F 2 "" H 3500 2300 50  0001 C CNN
-F 3 "" H 3500 2300 50  0001 C CNN
-	1    3500 2300
+F 0 "#PWR03" H 3500 1750 50  0001 C CNN
+F 1 "+5V" H 3515 2073 50  0000 C CNN
+F 2 "" H 3500 1900 50  0001 C CNN
+F 3 "" H 3500 1900 50  0001 C CNN
+	1    3500 1900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -167,4 +134,37 @@ F 3 "" H 8600 2500 50  0001 C CNN
 	1    8600 2500
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R R16
+U 1 1 5EC2CC66
+P 3500 3000
+F 0 "R16" H 3570 3046 50  0000 L CNN
+F 1 "470R" H 3570 2955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3430 3000 50  0001 C CNN
+F 3 "~" H 3500 3000 50  0001 C CNN
+	1    3500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5EC2E6B4
+P 3500 3250
+F 0 "#PWR02" H 3500 3000 50  0001 C CNN
+F 1 "GND" H 3505 3077 50  0000 C CNN
+F 2 "" H 3500 3250 50  0001 C CNN
+F 3 "" H 3500 3250 50  0001 C CNN
+	1    3500 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 2750 3500 2750
+Wire Wire Line
+	3500 1900 3500 2550
+Connection ~ 3500 2750
+Wire Wire Line
+	3500 2750 3700 2750
+Wire Wire Line
+	3500 2750 3500 2850
+Wire Wire Line
+	3500 3250 3500 3150
 $EndSCHEMATC
