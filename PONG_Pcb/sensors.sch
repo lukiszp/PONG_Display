@@ -27,7 +27,7 @@ F 3 "~" H 6250 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4850 2650 6050 2650
+	4850 2650 5150 2650
 $Comp
 L Connector_Generic:Conn_01x03 J?
 U 1 1 5E82C0F3
@@ -128,13 +128,9 @@ Wire Wire Line
 	5800 3600 5800 3500
 Wire Wire Line
 	5800 3600 6050 3600
-Wire Wire Line
-	4750 4700 6050 4700
-Wire Wire Line
-	6050 3700 5650 3700
 Text HLabel 4850 2650 0    50   Input ~ 0
 DHT22_DATA
-Text HLabel 5650 3700 0    50   Input ~ 0
+Text HLabel 4950 3700 0    50   Input ~ 0
 LIGHT_SENSOR_OUT
 Text HLabel 4750 4700 0    50   Input ~ 0
 PIR_OUT
@@ -166,4 +162,24 @@ Wire Wire Line
 	6050 3800 5800 3800
 Wire Wire Line
 	5800 3800 5800 3900
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5EC5B91F
+P 5150 2450
+F 0 "TP3" H 5208 2568 50  0000 L CNN
+F 1 "TestPoint" H 5208 2477 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 5350 2450 50  0001 C CNN
+F 3 "~" H 5350 2450 50  0001 C CNN
+	1    5150 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 2450 5150 2650
+Connection ~ 5150 2650
+Wire Wire Line
+	5150 2650 6050 2650
+Wire Wire Line
+	4950 3700 6050 3700
+Wire Wire Line
+	4750 4700 6050 4700
 $EndSCHEMATC

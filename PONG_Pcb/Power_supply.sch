@@ -200,8 +200,6 @@ Wire Wire Line
 	7300 1650 7300 1750
 Connection ~ 7300 1650
 Wire Wire Line
-	7300 1650 7700 1650
-Wire Wire Line
 	7700 1650 7700 1750
 Connection ~ 7700 1650
 Wire Wire Line
@@ -209,8 +207,6 @@ Wire Wire Line
 Wire Wire Line
 	8800 1650 8800 1750
 Connection ~ 8800 1650
-Wire Wire Line
-	8800 1650 9200 1650
 Wire Wire Line
 	9200 1650 9200 1750
 Connection ~ 9200 1650
@@ -390,7 +386,7 @@ U 1 1 5EC3FFE2
 P 2150 1750
 F 0 "D6" H 2150 1534 50  0000 C CNN
 F 1 "1N4001" H 2150 1625 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 2150 1575 50  0001 C CNN
+F 2 "Diode_SMD:D_SMC-RM10_Universal_Handsoldering" H 2150 1575 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 2150 1750 50  0001 C CNN
 	1    2150 1750
 	-1   0    0    1   
@@ -401,4 +397,8 @@ Wire Wire Line
 	2300 1750 2450 1750
 Wire Wire Line
 	2750 1750 2850 1750
+Wire Wire Line
+	7300 1650 7700 1650
+Wire Wire Line
+	8800 1650 9200 1650
 $EndSCHEMATC

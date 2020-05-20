@@ -31,9 +31,9 @@ Wire Wire Line
 Wire Wire Line
 	4600 2250 4700 2250
 Wire Wire Line
-	4600 2350 4700 2350
+	4600 2350 5400 2350
 Wire Wire Line
-	3950 2050 4100 2050
+	3200 2050 3550 2050
 Wire Wire Line
 	3950 2150 4100 2150
 Wire Wire Line
@@ -292,9 +292,9 @@ Text HLabel 3050 5700 0    50   Input ~ 0
 ESP_RST
 Wire Wire Line
 	4600 2050 4800 2050
-Text Label 4700 2350 0    50   ~ 0
+Text Label 5650 2350 0    50   ~ 0
 ESP_TX
-Text Label 3950 2050 2    50   ~ 0
+Text Label 3200 2050 2    50   ~ 0
 ESP_RX
 Text Label 4350 3250 2    50   ~ 0
 ESP_TX
@@ -605,4 +605,36 @@ Wire Wire Line
 	4350 2800 5000 2800
 Wire Wire Line
 	5000 2650 5000 2800
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5EC60E71
+P 5400 2100
+F 0 "TP5" H 5458 2218 50  0000 L CNN
+F 1 "TestPoint" H 5458 2127 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 5600 2100 50  0001 C CNN
+F 3 "~" H 5600 2100 50  0001 C CNN
+	1    5400 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5EC615EB
+P 3550 1800
+F 0 "TP4" H 3608 1918 50  0000 L CNN
+F 1 "TestPoint" H 3608 1827 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 3750 1800 50  0001 C CNN
+F 3 "~" H 3750 1800 50  0001 C CNN
+	1    3550 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 2100 5400 2350
+Connection ~ 5400 2350
+Wire Wire Line
+	5400 2350 5650 2350
+Wire Wire Line
+	3550 1800 3550 2050
+Connection ~ 3550 2050
+Wire Wire Line
+	3550 2050 4100 2050
 $EndSCHEMATC
