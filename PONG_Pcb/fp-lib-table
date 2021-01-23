@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name LIB_PONG_Display)(type KiCad)(uri ${KIPRJMOD}/LIB_PONG_Display.pretty)(options "")(descr ""))
-)
