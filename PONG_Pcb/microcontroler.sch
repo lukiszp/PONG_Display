@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 6
+Sheet 4 5
 Title ""
 Date ""
 Rev ""
@@ -20,7 +20,7 @@ Wire Wire Line
 Text Notes 7750 7500 0    50   ~ 0
 Schemat mikrokontrolera
 $Comp
-L PONG_Display-rescue:ATmega328P-AU-MCU_Microchip_ATmega U3
+L MCU_Microchip_ATmega:ATmega328P-AU U3
 U 1 1 5E85008B
 P 2800 3500
 F 0 "U3" H 2400 5000 50  0000 C CNN
@@ -973,12 +973,8 @@ Text Label 7800 1700 2    50   ~ 0
 RTC_SCL
 Text Label 7800 1800 2    50   ~ 0
 RTC_SDA
-Text HLabel 3550 2400 2    50   Input ~ 0
-LED_DATA
 Wire Wire Line
 	3400 3800 6150 3800
-Wire Wire Line
-	3550 2400 3400 2400
 $Comp
 L power:+5V #PWR056
 U 1 1 5E9BD4A6
@@ -1099,4 +1095,70 @@ Wire Wire Line
 	2050 6650 2850 6650
 Wire Wire Line
 	2050 6750 2850 6750
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 600C6715
+P 9800 5050
+AR Path="/5E80CCDD/600C6715" Ref="J?"  Part="1" 
+AR Path="/5E80C133/600C6715" Ref="J?"  Part="1" 
+AR Path="/5E80B18F/600C6715" Ref="J1"  Part="1" 
+F 0 "J1" H 9880 5092 50  0000 L CNN
+F 1 "LED_Display_Conn" H 9880 5001 50  0000 L CNN
+F 2 "TerminalBlock_RND:TerminalBlock_RND_205-00002_1x03_P5.00mm_Horizontal" H 9800 5050 50  0001 C CNN
+F 3 "~" H 9800 5050 50  0001 C CNN
+	1    9800 5050
+	1    0    0    1   
+$EndComp
+Text Notes 9100 4300 0    50   ~ 0
+Złącze wyjścia na wyświetlacz
+Text Label 8900 5050 0    50   ~ 0
+LED_DATA
+Wire Wire Line
+	8900 5050 9600 5050
+$Comp
+L power:GND #PWR?
+U 1 1 600C671E
+P 9550 5350
+AR Path="/5E80C133/600C671E" Ref="#PWR?"  Part="1" 
+AR Path="/5E80B18F/600C671E" Ref="#PWR0109"  Part="1" 
+F 0 "#PWR0109" H 9550 5100 50  0001 C CNN
+F 1 "GND" H 9555 5177 50  0000 C CNN
+F 2 "" H 9550 5350 50  0001 C CNN
+F 3 "" H 9550 5350 50  0001 C CNN
+	1    9550 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 4750 9550 4950
+Wire Wire Line
+	9550 4950 9600 4950
+Wire Wire Line
+	9550 5350 9550 5150
+Wire Wire Line
+	9550 5150 9600 5150
+$Comp
+L power:+5VA #PWR?
+U 1 1 600C6728
+P 9550 4750
+AR Path="/5E80C133/600C6728" Ref="#PWR?"  Part="1" 
+AR Path="/5E80B18F/600C6728" Ref="#PWR0110"  Part="1" 
+F 0 "#PWR0110" H 9550 4600 50  0001 C CNN
+F 1 "+5VA" H 9565 4923 50  0000 C CNN
+F 2 "" H 9550 4750 50  0001 C CNN
+F 3 "" H 9550 4750 50  0001 C CNN
+	1    9550 4750
+	1    0    0    -1  
+$EndComp
+Text Label 4250 2400 0    50   ~ 0
+LED_DATA
+Wire Wire Line
+	3400 2400 4250 2400
+Wire Notes Line
+	8500 4050 8500 6200
+Wire Notes Line
+	8500 6200 10950 6200
+Wire Notes Line
+	10950 6200 10950 4050
+Wire Notes Line
+	10950 4050 8500 4050
 $EndSCHEMATC
